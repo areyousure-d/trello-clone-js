@@ -1,0 +1,139 @@
+.list {
+  flex: 0 0 auto;
+  width: 282px;
+  margin: 0 4px;
+  padding: 0 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  background-color: $list-bg;
+  display: flex;
+  flex-direction: column;
+}
+
+.list:first-child {
+  margin-left: 8px;
+}
+
+.list-header {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-container {
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container__item {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 0 0 #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-container__item:last-child {
+  margin-bottom: none;
+}
+
+/*.list-container__item:hover {
+  background-color: rgba(150, 150, 150, .1);
+}*/
+
+.list-container__item.dragging {
+  opacity: 0.75;
+  background-color: #fff;
+  //transform: rotate(-5deg);
+}
+
+.list-container__item.rotate {
+  transform: rotate(5deg);
+}
+
+.list-container__item.dragging.rotate {
+  transform: rotate(0deg);
+}
+.list-container__item.gu-transit * {
+  display: none;
+}
+.list-container__item.gu-transit {
+  background-color: black;
+  color: black;
+  opacity: .1;
+}
+
+.list-add-item-button {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.list-add-item-button:hover {
+  background-color: #ccc;
+}
+
+.list.gu-transit,
+.list.gu-transit .list-container__item {
+  background-color: black;
+  color: black;
+  opacity: 0.1;
+}
+
+.list-footer {
+  display: flex;
+}
+
+.list-form {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.list-form .list-form__textarea {
+  flex: 1 1 auto;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  resize: vertical;
+  box-shadow: 0 2px 0 0 #ccc;
+  color: #172b4d;
+}
+
+.list-form .list-form__textarea::placeholder {
+  color: #5f6d85;
+}
+
+.list-form__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.list-form__submit {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #5aac44;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list-footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-form__reset {
+  padding: 8px;
+  background-color: rgba(200, 50, 50, .2);
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}

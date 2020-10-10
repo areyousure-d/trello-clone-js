@@ -1,0 +1,73 @@
+.board {
+  flex: 1 0 auto;
+  padding: 8px 0;
+  background-color: #007ebf;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.board__add-button {
+  flex: 0 0 auto;
+  width: 282px;
+  margin: 0 4px;
+  padding: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  background-color: rgba(200, 200, 200, .6);
+  color: #fff;
+}
+
+.board__add-button:hover {
+  background-color: rgba(200, 200, 200, .8);
+}
+
+.board-form {
+  flex: 0 0 auto;
+  width: 282px;
+  margin: 0 4px;
+  padding: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  background-color: $list-bg;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-form .board-form__textarea {
+  flex: 1 1 auto;
+  padding: 8px;
+  border: 2px solid #007ebf;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  resize: vertical;
+  box-shadow: 0 2px 0 0 #ccc;
+  color: #172b4d;
+}
+
+.board-form .board-form__textarea::placeholder {
+  color: #5f6d85;
+}
+
+.board-form__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.board-form__submit {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #5aac44;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+.board-form__reset {
+  padding: 8px;
+  background-color: rgba(200, 50, 50, .2);
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
