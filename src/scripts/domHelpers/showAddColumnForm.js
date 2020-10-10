@@ -1,5 +1,6 @@
 import { createElement, appendChild } from './createElement';
 import List from '../components/List';
+import { drakeList } from '../dragula';
 
 function showAddColumnForm(event) {
   event.preventDefault();
@@ -42,7 +43,10 @@ function submitForm() {
   const board = event.target.closest('.board');
   const form = event.target;
   //appendChild(listContainer, <List name={value} />);
-  board.insertBefore(<List name={value} />, form);
+  const list = <List name={value} />;
+  const listContainer = list.querySelector('.list-container');
+  board.insertBefore(list, form);
+  drakeList.containers.push(listContainer);
 }
 
 function hideForm(el, event) {

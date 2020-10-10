@@ -3,9 +3,10 @@ import {
   createFragment, 
   appendChild 
 } from './domHelpers/createElement';
-import dragula from 'dragula';
 import '../scss/main.scss';
 import App from './components/App';
+import {drakeList} from './dragula';
+import {drakeBoard} from './dragula';
 
 const root = document.getElementById('app');
 root.innerHTML = '';
@@ -17,9 +18,14 @@ const listContainersArray = Array.prototype.slice.call(listContainers);
 
 const board = document.querySelector('.board');
 
-dragula(listContainersArray);
+drakeList.containers.push(...listContainersArray)
 
-dragula([board], {
+drakeBoard.containers.push(board);
+
+/*
+const drake = dragula(listContainersArray);
+
+const drake2 = dragula([board], {
   moves: function(el, source, handle, sibling) {
     if (handle.matches('.list-header__name')) {
       return true;
@@ -27,5 +33,5 @@ dragula([board], {
     return false;
   }
 });
-
+*/
 
