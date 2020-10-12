@@ -17,10 +17,11 @@ const listContainers = document.querySelectorAll('.list-container');
 const listContainersArray = Array.prototype.slice.call(listContainers);
 
 const board = document.querySelector('.board');
+const boardContainer = document.querySelector('.board-container');
 
 drakeList.containers.push(...listContainersArray)
 
-drakeBoard.containers.push(board);
+drakeBoard.containers.push(boardContainer);
 
 /*
 const drake = dragula(listContainersArray);

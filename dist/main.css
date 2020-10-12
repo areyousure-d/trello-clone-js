@@ -129,6 +129,11 @@ body {
   overflow-x: auto;
 }
 
+.board-container {
+  display: flex;
+  align-items: flex-start;
+}
+
 .board__add-button {
   flex: 0 0 auto;
   width: 282px;

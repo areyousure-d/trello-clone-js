@@ -4,7 +4,7 @@ import showAddColumnForm from '../domHelpers/showAddColumnForm';
 export default function(props, ...children) {
   return (
     <div className="board">
-      { children }
+      <div className="board-container">{ children }</div>
       <button onClick={showAddColumnForm} className="board__add-button">Добавьте еще одну колонку</button>
     </div>
   );

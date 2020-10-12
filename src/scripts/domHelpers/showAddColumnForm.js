@@ -41,11 +41,13 @@ function submitForm() {
   }
   event.target.children[0].value = '';
   const board = event.target.closest('.board');
+  const boardContainer = board.querySelector('.board-container');
   const form = event.target;
   //appendChild(listContainer, <List name={value} />);
   const list = <List name={value} />;
   const listContainer = list.querySelector('.list-container');
-  board.insertBefore(list, form);
+  //board.insertBefore(list, form);
+  boardContainer.append(list);
   drakeList.containers.push(listContainer);
 }
 
