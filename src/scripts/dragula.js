@@ -8,7 +8,8 @@ const drakeBoard = dragula([], {
       return true;
     }
     return false;
-  }
+  },
+  direction: 'horizontal',
 });
 
 export {

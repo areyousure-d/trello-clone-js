@@ -4,7 +4,7 @@ import Board from './Board';
 import List from './List';
 import ListItem from './ListItem';
 
-const App = (props) => {
+const App = () => {
   return (
     <>
       <Header />

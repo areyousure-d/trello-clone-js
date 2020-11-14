@@ -1,7 +1,8 @@
 import { createElement, appendChild } from './createElement';
 import ListItem from '../components/ListItem';
 
-function showForm (event){
+// Add list container item (card)
+function showForm (event) {
   const button = event.target;
   const list = button.closest('.list');
   const listFooter = list.querySelector('.list-footer');

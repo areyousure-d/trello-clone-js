@@ -1,9 +1,8 @@
 import { createElement } from '../domHelpers/createElement';
-import ListItem from './ListItem';
 import showForm from '../domHelpers/showForm';
 
+// из-за реализации createElement требуется два аргумента (props, ...children)
 export default function (props, ...children) {
-
   return (
     <div className="list">
       <div className="list-header">
