@@ -199,6 +199,7 @@ body {
 }
 
 .list {
+  position: relative;
   flex: 0 0 auto;
   width: 282px;
   margin: 0 4px;
@@ -228,6 +229,7 @@ body {
 }
 
 .list-container__item {
+  position: relative;
   margin-bottom: 8px;
   padding: 8px;
   background-color: #fff;
@@ -336,4 +338,44 @@ body {
   margin-left: 8px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.list-container__delete-btn {
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  padding: 4px;
+  visibility: hidden;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(200, 50, 50, 0.8);
+  color: rgba(200, 50, 50, 0.8);
+}
+
+.list-container__delete-btn:hover {
+  background-color: rgba(200, 50, 50, 0.2);
+}
+
+.list-container__item:hover .list-container__delete-btn {
+  visibility: visible;
+}
+
+.list__delete-btn {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  padding: 4px;
+  visibility: hidden;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(200, 50, 50, 0.8);
+  color: rgba(200, 50, 50, 0.8);
+}
+
+.list__delete-btn:hover {
+  background-color: rgba(200, 50, 50, 0.2);
+}
+
+.list-header:hover .list__delete-btn {
+  visibility: visible;
 }
