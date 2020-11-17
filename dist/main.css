@@ -353,7 +353,7 @@ body {
 }
 
 .list-container__delete-btn:hover {
-  background-color: rgba(200, 50, 50, 0.2);
+  background-color: #f4d6d6;
 }
 
 .list-container__item:hover .list-container__delete-btn {
@@ -373,7 +373,7 @@ body {
 }
 
 .list__delete-btn:hover {
-  background-color: rgba(200, 50, 50, 0.2);
+  background-color: #f4d6d6;
 }
 
 .list-header:hover .list__delete-btn {
