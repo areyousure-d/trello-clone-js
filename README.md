@@ -5,7 +5,7 @@
 Использованы jsx, webpack, scss. Для drag and drop'а использована библиотека [dragula](https://github.com/bevacqua/dragula).
 
 ## посмотреть:
-посмотреть можно [тут](https://areyousure92.github.io/trello-clone-js/)
+посмотреть можно [тут](https://areyousure-d.github.io/trello-clone-js/)
 
 ## установка:
 `git clone`
